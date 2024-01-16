@@ -15,48 +15,39 @@
   background-color: beige;
   max-width: 400px;
   margin: 0 auto;
-}
-
-input {
-  padding: 5px;
-  margin: 5px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-
-label {
-  padding-left: 3px;
-}
-
-fieldset {
-  border-radius: 7px;
-}
-
-.botones {
-  text-align: center;
-}
-
-.botones2 {
-  text-align: center;
-}
-
-.botones2 button {
-  background-color: darkred;
-  color: white;
-  font-size: small;
-}
-
-button {
-  border: 1px solid black;
-  border-radius: 5px;
-  margin: 5px;
-}
-
-.botones2 button {
-  transition: background-color 1s ease;
-}
-
-.botones2 button:hover {
-  background-color: #0022aa;
+  & input {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  & label {
+    padding-left: 3px;
+  }
+  & fieldset {
+    border-radius: 7px;
+  }
+  & .botones {
+    text-align: center;
+  }
+  & .botones2 {
+    text-align: center;
+  }
+  & .botones2 button {
+    background-color: darkred;
+    color: white;
+    font-size: small;
+  }
+  & button {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  & .botones2 button {
+    transition: background-color 1s ease;
+  }
+  & .botones2 button:hover {
+    background-color: #0022aa;
+  }
 }

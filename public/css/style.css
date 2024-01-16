@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #eac926;
+  margin: 1% 1%;
 }
 
 /* HEADER */
@@ -14,8 +15,7 @@ body {
 .botones {
   display: flex;
   justify-content: space-between;
-  margin: 20px 50px 20px;
-
+  margin-bottom: 1%;
   & img {
     width: 10vw;
   }
@@ -25,7 +25,10 @@ body {
     align-items: center;
     gap: 5px;
     & input {
-      border-radius: 7px;
+      border: 1px solid #ccc;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 8px;
       width: 500px;
       height: 30px;
       text-align: center;
@@ -82,15 +85,15 @@ main {
     width: 250px;
     background-color: gray;
     position: relative;
-    bottom: 3px;
+    top: 3px;
   }
   & i {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    left: 100px;
-    bottom: 22px;
+    left: 110px;
+    bottom: 18px;
     color: green;
     width: 35px;
     height: 35px;
@@ -163,7 +166,7 @@ footer {
   }
   i {
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 2em;
     transition: color 0.5s ease;
   }
   i:hover {
@@ -220,6 +223,12 @@ footer {
     width: calc(100% - 20px);
     margin: 0 10px 20px;
   }
+
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 /* Para tablet */
@@ -263,5 +272,58 @@ footer {
   .products .card {
     width: calc(25% - 20px);
     margin: 0 10px 20px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1% 1%;
+  background-color: white;
+  max-width: 400px;
+  margin: 2% auto;
+  & input {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  & label {
+    padding-left: 3px;
+  }
+  & fieldset {
+    border-radius: 7px;
+    margin: 5px auto;
+  }
+  & .botones {
+    text-align: center;
+    & button {
+      padding: 2% 2%;
+    }
+  }
+  & .botones2 {
+    text-align: center;
+  }
+  & .botones2 button {
+    background-color: #ccc;
+    color: black;
+    font-size: small;
+    padding: 2% 2%;
+  }
+  & button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  & .botones2 button {
+    transition: background-color 1s ease;
+  }
+  & .botones2 button:hover {
+    background-color: #fbef82;
   }
 }
